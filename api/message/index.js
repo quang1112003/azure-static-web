@@ -11,3 +11,9 @@ module.exports = async function (context, req) {
         body: responseMessage
     };
 }
+
+module.exports= async function (context, reg) {
+    context.res.json({
+        text: "Hello from API"
+    });
+};
